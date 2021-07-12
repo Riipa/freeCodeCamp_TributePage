@@ -21,6 +21,7 @@ h3 {
     background: white;
     margin: 0;
     border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 img {
         max-width: 50%;
@@ -31,29 +32,46 @@ img {
       }
 .container {
     display: grid;
+    padding-bottom: 25px;
 
+    justify-items: center;
     /*  Taken from the responsive Grid tutorial without media queries on SelfHTML 
         https://wiki.selfhtml.org/wiki/CSS/Tutorials/Grid/responsive_Raster_ohne_Media_Queries
     */
-    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 10px 10px;
-
 }
-.fullSizeArticle {
-    background: white;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-
-    /*  Taken from the responsive Grid tutorial without media queries on SelfHTML 
-        https://wiki.selfhtml.org/wiki/CSS/Tutorials/Grid/responsive_Raster_ohne_Media_Queries
-    */    
-    grid-column: 1 / -1;
-    grid-row: span 2;
-    }
 .tidbit {
+    min-width: 150px;
+    max-width: 150px;
+    min-height: 180px;
+    max-height: 180px;
+    border-radius: 5px;
+    padding: 25px;
     background: white;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    
+    /* justify-self: center;   */
     /*  Taken from the responsive Grid tutorial without media queries on SelfHTML 
         https://wiki.selfhtml.org/wiki/CSS/Tutorials/Grid/responsive_Raster_ohne_Media_Queries
     */    
         }
+
+footer {
+    padding: 30px;
+    background: white;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    display: flex;
+    }
+
+/* .fullSizeArticle {
+    background: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+      Taken from the responsive Grid tutorial without media queries on SelfHTML 
+        https://wiki.selfhtml.org/wiki/CSS/Tutorials/Grid/responsive_Raster_ohne_Media_Queries
+   
+    grid-column: 1 / -1;
+    grid-row: span 2;
+    } */
